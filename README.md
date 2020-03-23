@@ -2,6 +2,8 @@
 
 A paid-members publication theme for Ghost. Can be used with no code knowledge required. With beautiful markdown code styling from [synthwave-vscode](https://github.com/robb0wen/synthwave-vscode) By the wonderful and talented [Robb Owen](https://twitter.com/robb0wen)
 
+![screenshot](https://raw.githubusercontent.com/smashah/Lyra/master/assets/screenshot-code.png)
+
 # Instructions
 
 1. [Download this theme](https://github.com/TryGhost/Lyra/archive/master.zip)
