@@ -45,7 +45,7 @@
 
                         <div class="subscriber-detail">
                             <label class="subscriber-detail-label">Your plan</label>
-                            <span class="subscriber-detail-content">${{price plan.amount}}/{{plan.interval}}</span>
+                                <span class="subscriber-detail-content">{{plan.currency_symbol}}{{price plan.amount}}/{{plan.interval}}</span>
                         </div>
 
                         <div class="subscriber-detail">
@@ -68,8 +68,8 @@
                     <ul class="subscription-actions">
                         <li><a href="javascript:"
                                 data-members-edit-billing
-                                data-members-success="/account/?stripe=billing-update-success"
-                                data-members-cancel="/account/?stripe=billing-update-cancel">Edit billing info</a></li>
+                                data-members-success="{{@site.url}}/account/?stripe=billing-update-success"
+                                data-members-cancel="{{@site.url}}/account/?stripe=billing-update-cancel">Edit billing info</a></li>
                         <li>{{cancel_link}}</li>
                     </ul>
                 </div>
@@ -89,7 +89,7 @@
             <h1 class="account-box-title">Currently, you're not a subscriber</h1>
             <p>Hey there! <strong>{{@member.email}}</strong> is subscribed to free updates from {{@site.title}}, but doesn't have a paid subscription to unlock full access.</p>
             <div class="authbox-signup">
-                <a class="button primary" href="/signup/">
+                <a class="button primary" href="{{@site.url}}/signup/">
                     <span class="button-content">Subscribe now</span>
                 </a>
             </div>
